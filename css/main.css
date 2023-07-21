@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+}
+main .section-select--buttons, main .section--thank-you {
+  width: 350px;
+  height: auto;
+  background-color: #1f2630;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 20px;
+}
+main .section-select--buttons .ico-star, main .section--thank-you .ico-star {
+  width: 40px;
+  height: 40px;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 50%;
+}
+main .section-select--buttons .ico-star span, main .section--thank-you .ico-star span {
+  background-image: url("../images/icon-star.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 15px;
+  height: 15px;
+  display: block;
+  background-color: #212832;
+  margin: auto;
+}
+main .section-select--buttons h1, main .section--thank-you h1 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+main .section-select--buttons div, main .section--thank-you div {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+main .section-select--buttons div button, main .section--thank-you div button {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(217, 12%, 63%);
+  border: none;
+}
+main .section-select--buttons div button:hover, main .section--thank-you div button:hover {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+main .section-select--buttons div button:focus, main .section--thank-you div button:focus {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+main .section-select--buttons p, main .section--thank-you p {
+  font-size: 1.3rem;
+  line-height: 20px;
+  color: hsl(217, 12%, 63%);
+}
+main .section-select--buttons .butSubmit, main .section--thank-you .butSubmit {
+  background-color: hsl(25, 97%, 53%);
+  border: 1px solid hsl(25, 97%, 53%);
+  border-radius: 20px;
+  padding: 10px 30px;
+  letter-spacing: 3px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+main .section-select--buttons .butSubmit:hover, main .section--thank-you .butSubmit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  border: 1px solid hsl(0, 0%, 100%);
+}
+main .section--thank-you {
+  display: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+main .section--thank-you h2 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+main .section--thank-you .text-orange {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: hsl(25, 97%, 53%);
+  background-color: #212832;
+  font-weight: 400;
+  padding: 5px 15px;
+  border-radius: 12px;
+}/*# sourceMappingURL=main.css.map */

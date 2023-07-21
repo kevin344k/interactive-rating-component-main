@@ -1,0 +1,150 @@
+//## Colors
+
+//### Primary
+
+$Orange: hsl(25, 97%, 53%);
+
+//### Neutral
+
+$White: hsl(0, 0%, 100%);
+$Light_Grey: hsl(217, 12%, 63%);
+$Medium_Grey: hsl(216, 12%, 54%);
+$Dark_Blue: hsl(213, 19%, 18%);
+$Very_Dark_Blue: hsl(216, 12%, 8%);
+
+//## Typography
+
+//### Body Copy
+
+$Font_size_paragraph: 15px;
+
+//### Font
+
+$Family: 'Overpass', sans-serif;
+;
+
+// Weights: 400, 700
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: $Very_Dark_Blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $Family;
+    font-size: $Font_size_paragraph;
+
+    
+    .section-select--buttons {
+        width: 350px;
+        height: auto;
+        background-color:  #1f2630;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px;
+        border-radius: 20px;
+        .ico-star{
+            width: 40px;
+            height: 40px;
+            background-color:  $Dark_Blue;
+            border-radius: 50%;
+            span {
+                background-image: url("../images/icon-star.svg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 15px;
+                height: 15px;
+                display: block;
+                background-color: #212832;
+                margin: auto;
+               
+            }
+    
+        }
+        h1{
+            color: $White;
+            font-weight: 700;
+        }
+       
+        div {
+            display: flex;
+            justify-content: space-around;
+            gap: 15px;
+
+            button {
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                background-color:  $Dark_Blue;
+                color: $Light_Grey;
+                border: none;
+                &:hover{
+                    background-color: $Medium_Grey;
+                    color: $White;
+                }
+                &:focus{
+                    background-color: $Orange;
+                    color: $White;
+                }
+            }
+        }
+        p{
+            font-size: 1.3rem;
+            line-height: 20px;
+            color: $Light_Grey;
+        }
+        .butSubmit {
+            background-color: $Orange;
+            border: 1px solid $Orange;
+            border-radius: 20px;
+            padding: 10px 30px;
+            letter-spacing: 3px;
+            color: $White;
+            font-weight: 700;
+            &:hover{
+                background-color: $White;
+                color: $Orange;
+                border: 1px solid $White;
+            }
+          
+        }
+    
+    }
+
+.section--thank-you{
+
+
+    @extend .section-select--buttons;
+    display: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+   gap: 10px;
+    h2{
+        color: $White;
+        font-weight: 700;
+    }
+    .text-orange{
+        width: fit-content;
+        color: $Orange;
+        background-color: #212832;
+        font-weight: 400;
+        padding: 5px 15px;
+        border-radius: 12px;
+    }
+}
+
+
+}
